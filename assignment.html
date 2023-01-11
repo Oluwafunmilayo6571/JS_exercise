@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Three</title>
+</head>
+<body>
+    <h3 id="class"> Third Day Class</h3>
+
+    <h4 id="day3"></h4>
+    <h4 id="lectures"></h4>
+
+    
+
+    <script>
+        document.getElementById('day3').innerHTML = 'Welcome to my third day of Javascript experience. '
+        document.getElementById('lectures').innerHTML = 'What I learnt today: Assignment Operators which are used to assign values to a variable. They are: =, +=, *=, -=, /=, %=, **=; Comparison Operators which are used to compare two values and the result is boolean. They are: <, >, ==, ===, !=, <=, >=, !===; Conditional Operators are used to check for conditions; Logical Operators which are also used to compare. They are: AND, OR and NOT and are represented by &&, ||, and ! respectively; Lastly, String  and String concatination. '
+        console.log("Assignment operators")
+        let a = 5;
+        console.log(a)
+
+        let b = 10;
+        b = b + 20;
+        b +=10
+        console.log(b)
+
+        let c = 50;
+        c = a * 20;
+        c *=10
+        console.log(c)
+
+        let d = 7;
+        d = d - 3;
+        d -=10
+        console.log(d)
+        
+        let e = 5;
+        e = e - 50;
+        a -=10
+        console.log(e)
+
+        let f = 40;
+        f = f / 2;
+        f /=10
+        console.log(f)
+
+        let g = 5;
+        g = g % 50;
+        g %=10
+        console.log(g)
+
+        let h = 5;
+        h = h ** 50;
+        h **=10
+        console.log(h)
+
+        console.log("Comparison Operators")
+        let y = 9
+        let z = 4
+        console.log(y < z)
+        console.log(y > z)
+        console.log(y == z)
+        console.log(y === z)
+        console.log(z != y)
+        console.log(z <= y)
+        console.log(z >= y)
+        console.log(z !== y)
+
+        console.log("Conditional Operators")
+        let i = 6 < 2? "False" : "True";
+        console.log(i)
+
+        let score = 78
+        let grade = score > 80? "Good":"Very good";
+        console.log(grade)
+
+        console.log("Logical Operator")
+        let w = ((13 > 17) && (19 > 23))
+        console.log(w)
+
+        let m = ((0 > -8) || (6 < 4))
+        console.log(m)
+
+        let u = !((1 <= 1) || (2 < 2))
+        console.log(u)
+
+        let v = !((1 <= 1) && (2 < 2))
+        console.log(v)
+
+        console.log("String")
+        let firstname = "Oluwafunmilayorepete";
+        let surname = "Aderibigbe";
+        let fullname = firstname + " " + surname
+        console.log(fullname)
+
+
+    
+        
+    </script>
+    <!-- <p id="operator1"></p>
+    <p id="operator2"></p>
+    <p id="operator3"></p>
+    <p id="operator4"></p> -->
+
+    <!-- <script>
+        document.getElementById('operator1').innerHTML = ''
+        document.getElementById('operator2').innerHTML = ''
+        document.getElementById('operator3').innerHTML = ''
+        document.getElementById('operator4').innerHTML = ''
+    
+        let a = 5;
+        a = a - 50;
+        a -=10
+        console.log(a)
+>
+        let b = 10;
+        b = b - 20;
+        b /=10
+        console.log(b)
+
+        let c = 5;
+        c = a - 50;
+        c %=10
+        console.log(c)
+
+        let d = 5;
+        d = a - 50;
+        d -=10
+        console.log(d)
+    </script> -->
+
+    
+</body>
+</html>
