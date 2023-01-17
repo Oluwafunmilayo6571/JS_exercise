@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input2</title>
+    <link rel="stylesheet" href="input2.css">
+</head>
+<body>
+    <h3>GRADE CHECKER</h3>
+    <h3>Enter your score into the box below to check your grade</h3>
+    <input type="text" id="score" oninput="grade()">
+    <p id="Result"></p>
+    <script>
+
+        function grade(){
+            let score=document.getElementById('score').value;
+            if (score >=70 && score <=100){
+            document.getElementById('Result').innerHTML="A";
+            }
+        else if (score >=60 && score <=69){
+            document.getElementById('Result').innerHTML="B";
+            }
+        else if (score >=50 && score <=59){
+            document.getElementById('Result').innerHTML="C";
+            }
+        else if (score >=45 && score <=49){
+            document.getElementById('Result').innerHTML="D";
+            }
+        else if (score >=40 && score <=44){
+            document.getElementById('Result').innerHTML="E";
+            }
+        else if (score >=0 && score <=39){
+            document.getElementById('Result').innerHTML="F";
+            }
+        else {
+            document.getElementById('Result').innerHTML="Extremely fail";
+            }
+    }
+    </script>
+</body>
+</html>

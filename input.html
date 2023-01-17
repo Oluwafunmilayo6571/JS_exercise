@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+<body>
+    <div style="width:40%;margin:auto">
+        <label>Score</label>
+        <input type="text" value="45" id="score" style="width:100%"; height="">
+                            <!-- normal value -->
+        <button onclick="document.getElementById('score').value='1'">0</button>
+        <button onclick="document.getElementById('score').value='2'">1</button>
+        <button onclick="document.getElementById('score').value='3'">2</button>
+        <button onclick="document.getElementById('score').value='+'">3</button>
+        <button onclick="document.getElementById('score').value +='4'">4</button>
+        <button onclick="document.getElementById('score').value +='1'">5</button>
+        <button onclick="document.getElementById('score').value +='1'">6</button>
+        <button onclick="document.getElementById('score').value +='1'">7</button>
+        <button onclick="document.getElementById('score').value +='1'">8</button>
+        <button onclick="document.getElementById('score').value +='1'">9</button>
+
+                        <!-- string concatination -->
+        <button onclick="document.getElementById('score').value +='1'">1</button>
+        <button onclick="document.getElementById('score').value +='2'">2</button>
+        <button onclick="document.getElementById('score').value +='3'">3</button>
+        <button onclick="document.getElementById('score').value = eval(document.getElementById('score').value)">=</button>
+        <button onclick="document.getElementById('score').value">Clear</button>
+
+    
+    
+    </div>
+
+    <p id="Result"></p>
+
+    <script>
+        // let score = document.getElementById('score');
+        // to get value
+        // score.value
+        // console.log(score.value)
+        // to send value
+        // score.value=45;
+
+
+        // let score = document.getElementById(score).value
+        // console.log(value)
+
+        let score = 67
+        if (score >= 70 && score <= 100){
+            console.log('A')
+            document.getElementById('Result').innerHTML="A";
+        }
+        else if (score >= 60 && score <= 69){
+            console.log('B')
+            document.getElementById('Result').innerHTML="B";
+        }
+        else if (score >= 50 && score <= 59){
+            console.log('C')
+            document.getElementById('Result').innerHTML="C";
+        }
+        else if (score >= 45 && score <= 49){
+            console.log('D')
+            document.getElementById('Result').innerHTML="D";
+        }
+        else if (score >= 40 && score <= 44){
+            console.log('E')
+            document.getElementById('Result').innerHTML="E";
+        }
+        else if (score >= 0 && score <= 39){
+            console.log('F')
+            document.getElementById('Result').innerHTML="F";
+        }
+        else {
+            console.log('Extremely fail')
+            document.getElementById('Result').innerHTML="Extremely fail";
+        }
+    </script>
+</body>
+</html>

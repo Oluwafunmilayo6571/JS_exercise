@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <div id="greet"></div>
+    <p onclick="greeting()">Greeting</p>
+    <input type="text" id="output">
+    <br />
+    <button onclick="one()">1</button>
+    <button onmouseover="one()">1</button>
+    <div id="sum"></div>
+
+    <script>
+
+        //Syntax
+
+        /* function functionName (parameters) {
+            //Codes
+        }
+        */
+
+        function greeting(){
+            let name = "Oluwafunmilayo";
+            document.getElementById('greet').innerText="Welcome to our Supermarket"
+        }
+    // greeting()
+
+    function one(){
+        document.getElementById('output').value +=1
+
+    }
+    function sum(){
+        let a=4;
+        let b=10;
+        let c = a+b;
+        document.getElementById('sum').innerHTML=c;
+    }
+    
+    function sum(a, b, c){
+        document.getElementById('sum').innerHTML=a+b+c;
+    }
+    sum(2, 6, 5);
+
+    function sum(a, b, c){
+        return a+b+c
+        document.getElementById('sum').innerHTML=a+b+c;
+    }
+
+    document.getElementById('sum').innerHTML = sum(2, 6, 9)
+    </script>
+</body>
+</html>
